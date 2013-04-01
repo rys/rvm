@@ -46,7 +46,7 @@ __rvm_set_ruby_version()
         \mv .ruby-gemset .ruby-gemset.$(date +%m.%d.%Y-%H:%M:%S)
         rvm_warn ".ruby-gemset is not empty, moving aside to preserve."
       fi
-      echo "${__version##*@}" > .ruby-gemset
+      echo -n "${__version##*@}" > .ruby-gemset
       ;;
     (*)
       if
@@ -57,7 +57,7 @@ __rvm_set_ruby_version()
       fi
       ;;
   esac
-  echo "${__version%@*}" > .ruby-version
+  echo -n "${__version%@*}" > .ruby-version
 }
 
 __rvm_set_rvmrc()

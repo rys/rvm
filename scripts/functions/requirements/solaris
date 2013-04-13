@@ -7,7 +7,7 @@ requirements_solaris_run()
       true
       ;;
     (rvm)
-      __rvm_try_sudo pkg install bash curl git patch
+      __rvm_try_sudo pkg install bash curl git text/gnu-patch
       ;;
     (jruby-head*)
       __rvm_try_sudo pkg install jdk apache-ant

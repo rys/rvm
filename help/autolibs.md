@@ -18,11 +18,11 @@ Some people might get confused at the difference between `--autolibs` and `autol
 
 ## Modes
 
-* `0` - do not do anything,
-* `1` - use available libraries, ignore missing,
-* `2` - use libraries, fail if some are missing,
-* `3` - use libraries, install missing libraries,
-* `4` - install missing package manager (only osx)
+* `0`, `disable`, `disabled` - Do not do anything.
+* `1`, `read`, `read-only` - Use available libs, ignore missing.
+* `2`, `fail`, `read-fail` - Use libs, fail if some are missing.
+* `3`, `packages`, `install-packages`, - Use libs, install missing libs.
+* `4`, `enable`, `enabled` - Install missing package manager (only OSX, on Linux it's like 3).
 
 ## Letting RVM take care of it all (4)
 
@@ -57,22 +57,14 @@ Autolibs also has three other options and these options are 2, which will read p
 
 ## Other modes
 
-* `reset` &nbsp;=>&nbsp; Reset RVM back to default mode.
-* `show` &nbsp;=>&nbsp; Display your current mode.
-* `help` &nbsp;=>&nbsp; Display basic mode descriptions.
-* `status` &nbsp;=>&nbsp; Display detailed information about your mode.
-
-## Modes
-
-* `0`, `disable`, `disabled` &nbsp;=>&nbsp; Disable autolibs.
-* `1`, `read`, `read-only` &nbsp;=>&nbsp; Do not fail if missing packages.
-* `2`, `fail`, `read-fail` &nbsp;=>&nbsp; Fail if missing packages.
-* `3`, `packages`, `install-packages` &nbsp;=>&nbsp; Install missing packages.
-* `4`, `enable`, `enabled` &nbsp;=>&nbsp; Install packages and homebrew if missing.
+* `reset` - Reset RVM back to default mode.
+* `show` - Display your current mode.
+* `help` - Display basic mode descriptions.
+* `status` - Display detailed information about your mode.
 
 ## Additional modes
 
-* `brew`, `homebrew`, `osx_brew` &nbsp;=>&nbsp; Like 4, enforce Homebrew.
-* `fink`, `osx_fink` &nbsp;=>&nbsp; Like 4, enforces Fink.
-* `smf` &nbsp;=>&nbsp; Like 4, enforce SM Framework.
-* `port`, `macports`, `osx_port` &nbsp;=>&nbsp; Like 4, enforce MacPorts.
+* `brew`, `homebrew`, `osx_brew` - Like 4, enforce Homebrew.
+* `fink`, `osx_fink` - Like 4, enforces Fink.
+* `smf` - Like 4, enforce SM Framework.
+* `port`, `macports`, `osx_port` - Like 4, enforce MacPorts.
